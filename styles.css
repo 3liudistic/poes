@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    opacity: 0; /* Start with container hidden */
+    transform: translateY(100%); /* Start with container off-screen */
+    transition: all 1s ease-in-out; /* Smooth transition for opacity and position */
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.oops-video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
