@@ -17,15 +17,32 @@ body {
     padding: 20px;
     text-align: center;
 }
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .message {
+        font-size: 1.1rem; /* Slightly smaller font size for tablets */
+    }
+}
 
+@media (max-width: 768px) {
+    .message {
+        font-size: 1rem; /* Smaller font size for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        font-size: 0.9rem; /* Even smaller font size for very small devices */
+    }
+}
 .main-image {
     max-width: 100%;
     height: auto;
 }
 
 .message {
-    margin-top: 20px;
-    padding: 0 10px; /* Add padding to prevent text from touching screen edges */
+    margin-top: 15px;
+    padding: 0 20px; /* Add padding to prevent text from touching screen edges */
     font-size: 1.2rem;
     line-height: 1.5;
 }
