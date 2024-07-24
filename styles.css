@@ -17,6 +17,7 @@ body {
     opacity: 0; /* Start with container hidden */
     transform: translateY(100%); /* Start with container off-screen */
     transition: all 1s ease-in-out; /* Smooth transition for opacity and position */
+    text-align: center; /* Ensure text is centered */
 }
 
 .main-image {
@@ -24,10 +25,15 @@ body {
     height: auto;
 }
 
+.oops-video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
 
 .message {
-    margin-top: 15px;
-    padding: 10px; /* Add padding to prevent text from touching screen edges */
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding to prevent text from touching screen edges */
 }
 
 .logo {
@@ -43,7 +49,7 @@ body {
     }
 
     .message {
-        font-size: 1rem; 
+        font-size: 1rem; /* Adjust font size for smaller screens */
     }
 
     .logo {
