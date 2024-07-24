@@ -32,11 +32,11 @@ body {
 
 .message .logo-container {
     display: inline-flex;
-    align-items: center; /* Aligns items vertically */
+    align-items: left; /* Aligns items vertically */
 }
 
 .message .logo {
-    width: 4.5rem;
+    width: 1.5rem;
     height: auto;
     margin-left: 0.5rem;
 
