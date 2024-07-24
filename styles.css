@@ -26,13 +26,13 @@ body {
 
 @media (max-width: 768px) {
     .message {
-        font-size: 1rem; /* Smaller font size for mobile devices */
+        font-size: 14px; /* Smaller font size for mobile devices */
     }
 }
 
 @media (max-width: 480px) {
     .message {
-        font-size: 0.9rem; /* Even smaller font size for very small devices */
+        ffont-size: 14px; /* Even smaller font size for very small devices */
     }
 }
 .main-image {
