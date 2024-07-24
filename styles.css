@@ -3,7 +3,7 @@ body {
     overflow: hidden;
     font-family: Brush Script MT;
     background-color: #000000;
-    color: #2707A7;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
