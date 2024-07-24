@@ -55,7 +55,7 @@ body {
     margin-top: 20px;
 }
 
-#container {
+#banner {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -64,20 +64,40 @@ body {
     overflow: hidden;
     font-size: 1rem;
     font-family: monospace;
-    white-space: nowrap;
+}
+
+.scroll-container {
+    display: flex;
+    width: 200%; /* Double the width of the container */
 }
 
 .scroll {
     display: flex;
-    position: absolute;
-    width: 200%; /* Make sure the combined width of both scrolls is twice the container width */
+    width: 50%; /* Adjust to match the width of the container */
+    flex-direction: column;
+    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
-.scroll#scroll-one {
-    animation: loop 30s linear infinite; /* Adjust duration for desired scrolling speed */
+.item {
+    padding: 0 50px; /* Space between items */
+    white-space: nowrap;
 }
 
-.scroll#scroll-two {
-    transform: translateX(100%);
-    animation: loop 30s linear infinite;
-    animation-delay: 15s
+.text {
+    display: block;
+}
+
+.value {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
