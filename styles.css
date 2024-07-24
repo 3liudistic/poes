@@ -7,13 +7,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     padding: 20px;
     text-align: center;
 }
@@ -26,10 +26,16 @@ body {
 .message {
     margin-top: 20px;
     padding: 0 10px; /* Add padding to prevent text from touching screen edges */
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .message {
+        font-size: 1rem; /* Smaller font size for mobile devices */
+    }
+}
 .message .logo-container {
     display: inline-flex;
     align-items: left; /* Aligns items vertically */
@@ -56,7 +62,12 @@ body {
     height: auto;
     margin-top: 20px;
 }
-
+.scroll {
+    display: flex;
+    width: 100%; /* Full width of the container */
+    white-space: nowrap;
+    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
+}
 .banner {
     position: fixed;
     bottom: 0;
