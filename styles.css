@@ -4,15 +4,18 @@ body {
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
+    overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
     max-width: 600px;
     padding: 20px;
+    text-align: center;
 }
 
 .main-image {
@@ -20,8 +23,76 @@ body {
     height: auto;
 }
 
+.message {
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding to prevent text from touching screen edges */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.message .logo-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.message .logo {
+    width: 1.5rem;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+.message .right-to-repair {
+    font-weight: bold;
+}
+
+.message .right-to-repair .o-red {
+    color: red;
+}
+
 .logo {
     max-width: 150px;
     height: auto;
     margin-top: 20px;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.data-item {
+    margin: 0 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .message {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .logo {
+        max-width: 100px; /* Adjust logo size for smaller screens */
+    }
+
+    .banner {
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+
+    .data-item {
+        margin: 0 5px;
+    }
 }
