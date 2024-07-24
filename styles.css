@@ -69,12 +69,23 @@ body {
 .banner-content {
     display: flex;
     white-space: nowrap;
-    animation: scroll 30s linear infinite; /* Increased duration for more data */
+    animation: scroll 60s linear infinite; /* Adjusted duration for more data */
     padding: 10px 0;
 }
 
 .data-item {
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-text {
+    font-weight: bold;
+}
+
+.data-value {
+    margin-top: 5px;
 }
 
 /* Scroll animation */
