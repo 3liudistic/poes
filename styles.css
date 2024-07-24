@@ -7,13 +7,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
     padding: 20px;
     text-align: center;
 }
@@ -26,19 +26,32 @@ body {
 .message {
     margin-top: 20px;
     padding: 0 10px; /* Add padding to prevent text from touching screen edges */
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Default font size for larger screens */
     line-height: 1.5;
 }
 
 /* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .message {
+        font-size: 1.1rem; /* Slightly smaller font size for tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .message {
         font-size: 1rem; /* Smaller font size for mobile devices */
     }
 }
+
+@media (max-width: 480px) {
+    .message {
+        font-size: 0.9rem; /* Even smaller font size for very small devices */
+    }
+}
+
 .message .logo-container {
     display: inline-flex;
-    align-items: left; /* Aligns items vertically */
+    align-items: center; /* Aligns items vertically */
 }
 
 .message .logo {
@@ -46,7 +59,6 @@ body {
     height: auto;
     margin-left: 0.5rem;
     vertical-align: middle; /* Ensures vertical alignment of the logo */
-
 }
 
 .message .right-to-repair {
@@ -58,17 +70,12 @@ body {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
     height: auto;
     margin-top: 20px;
 }
-.scroll {
-    display: flex;
-    width: 100%; /* Full width of the container */
-    white-space: nowrap;
-    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
-}
-.banner {
+
+#banner {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -77,29 +84,29 @@ body {
     overflow: hidden;
     font-size: 1rem;
     font-family: monospace;
-    white-space: nowrap;
 }
 
-.banner-content {
+.scroll {
     display: flex;
+    width: 100%; /* Full width of the container */
+    white-space: nowrap;
     animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
-.data-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 30px;
+.item {
+    display: inline-block;
+    padding: 0 50px; /* Space between items */
+    white-space: nowrap;
 }
 
-.data-text {
-    font-size: 1rem;
-    margin-bottom: 5px;
+.text {
+    display: block;
 }
 
-.data-value {
-    font-size: 1.2rem;
+.value {
+    display: block;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 @keyframes scroll {
@@ -107,6 +114,6 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
