@@ -101,7 +101,7 @@ body {
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
     .container {
-        padding: 10px;
+        padding: 20px;
     }
 
     .message {
@@ -109,7 +109,7 @@ body {
     }
 
     .logo {
-        max-width: 100px; /* Adjust logo size for smaller screens */
+        max-width: 700px; /* Adjust logo size for smaller screens */
     }
 
     .banner {
