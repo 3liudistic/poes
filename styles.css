@@ -32,7 +32,7 @@ body {
 
 .message .logo-container {
     display: inline-flex;
-    align-items: center;
+    align-items: top;
 }
 
 .message .logo {
