@@ -24,7 +24,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .message {
         font-size: 14px; /* Smaller font size for mobile devices */
     }
@@ -36,7 +36,7 @@ body {
     }
 }
 .main-image {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
