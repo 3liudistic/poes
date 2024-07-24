@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    function updateClock() {
-        const now = new Date();
-        const timeString = now.toLocaleTimeString();
-        document.getElementById('clock').textContent = `Time: ${timeString}`;
-    }
+window.addEventListener('load', function() {
+    const container = document.querySelector('.container');
+    setTimeout(() => {
+        container.style.opacity = 1;
+        container.style.transform = 'translateY(0)';
+    }, 1000); // 1 second delay before starting the animation
+});
 
     function updateCounters() {
         // Example: Fetch data from your backend
