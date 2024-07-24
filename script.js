@@ -1,21 +1,15 @@
-window.addEventListener('load', function() {
-    const container = document.querySelector('.container');
+function updateTime() {
     const timeElement = document.getElementById('time');
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    timeElement.innerHTML = `<span class="data-text">Local Time:</span><span class="data-value">${hours}:${minutes}:${seconds}</span>`;
 
-    // Function to update time
-    function updateTime() {
-        const now = new Date();
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        timeElement.textContent = `Local Time: ${hours}:${minutes}:${seconds}`;
-    }
+    // Update the duplicate time element for seamless scrolling
+    const timeDuplicateElement = document.getElementById('time-duplicate');
+    timeDuplicateElement.innerHTML = `<span class="data-text">Local Time:</span><span class="data-value">${hours}:${minutes}:${seconds}</span>`;
+}
 
-    setInterval(updateTime, 1000);
-    updateTime();
-
-    setTimeout(() => {
-        container.style.opacity = 1;
-        container.style.transform = 'translateY(0)';
-    }, 1000); // 1 second delay before starting the animation
-});
+setInterval(updateTime, 1000);
+updateTime(); // Initial call to set time immediately
