@@ -64,60 +64,36 @@ body {
     overflow: hidden;
     font-size: 1rem;
     font-family: monospace;
+    white-space: nowrap;
 }
 
 .banner-content {
     display: flex;
-    white-space: nowrap;
-    animation: scroll 60s linear infinite; /* Adjusted duration for more data */
-    padding: 10px 0;
+    animation: scroll 30s linear infinite;
 }
 
 .data-item {
-    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 30px;
 }
 
 .data-text {
-    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 .data-value {
-    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-/* Scroll animation */
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
-    }
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .message {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    .logo {
-        max-width: 100px; /* Adjust logo size for smaller screens */
-    }
-
-    .banner {
-        font-size: 0.8rem;
-        padding: 5px 0;
-    }
-
-    .data-item {
-        margin: 0 10px;
     }
 }
