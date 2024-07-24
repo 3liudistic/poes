@@ -55,7 +55,7 @@ body {
     margin-top: 20px;
 }
 
-.banner {
+#banner {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -64,29 +64,33 @@ body {
     overflow: hidden;
     font-size: 1rem;
     font-family: monospace;
-    white-space: nowrap;
 }
 
-.banner-content {
+.scroll-container {
     display: flex;
+    width: 200%; /* Double the width of the container */
+}
+
+.scroll {
+    display: flex;
+    width: 50%; /* Adjust to match the width of the container */
+    flex-direction: column;
     animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
-.data-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 30px;
+.item {
+    padding: 0 50px; /* Space between items */
+    white-space: nowrap;
 }
 
-.data-text {
-    font-size: 1rem;
-    margin-bottom: 5px;
+.text {
+    display: block;
 }
 
-.data-value {
-    font-size: 1.2rem;
+.value {
+    display: block;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 @keyframes scroll {
