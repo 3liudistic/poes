@@ -24,14 +24,9 @@ body {
     height: auto;
 }
 
-.oops-video {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
 
 .message {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 0 10px; /* Add padding to prevent text from touching screen edges */
 }
 
@@ -48,7 +43,7 @@ body {
     }
 
     .message {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; 
     }
 
     .logo {
