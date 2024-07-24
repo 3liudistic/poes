@@ -69,7 +69,7 @@ body {
 
 .banner-content {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
 .data-item {
