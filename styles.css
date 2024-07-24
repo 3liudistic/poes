@@ -2,8 +2,8 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: black;
+    background-color: #000000;
+    color: #56BBB5;
     display: flex;
     flex-direction: column;
     justify-content: center;
