@@ -27,7 +27,7 @@ body {
 
 .message {
     margin-top: 15px;
-    padding: 0 10px; /* Add padding to prevent text from touching screen edges */
+    padding: 10px; /* Add padding to prevent text from touching screen edges */
 }
 
 .logo {
