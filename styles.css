@@ -4,18 +4,15 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
-    overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
     max-width: 600px;
     padding: 20px;
-    text-align: center;
 }
 
 .main-image {
@@ -23,97 +20,8 @@ body {
     height: auto;
 }
 
-.message {
-    margin-top: 20px;
-    padding: 0 10px; /* Add padding to prevent text from touching screen edges */
-    font-size: 1.2rem; /* Default font size for larger screens */
-    line-height: 1.5;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-    .message {
-        font-size: 1.1rem; /* Slightly smaller font size for tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .message {
-        font-size: 1rem; /* Smaller font size for mobile devices */
-    }
-}
-
-@media (max-width: 480px) {
-    .message {
-        font-size: 0.9rem; /* Even smaller font size for very small devices */
-    }
-}
-
-.message .logo-container {
-    display: inline-flex;
-    align-items: center; /* Aligns items vertically */
-}
-
-.message .logo {
-    width: 1.5rem;
-    height: auto;
-    margin-left: 0.5rem;
-    vertical-align: middle; /* Ensures vertical alignment of the logo */
-}
-
-.message .right-to-repair {
-    font-weight: bold;
-}
-
-.message .right-to-repair .o-red {
-    color: red;
-}
-
 .logo {
     max-width: 150px;
     height: auto;
     margin-top: 20px;
-}
-
-#banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    font-size: 1rem;
-    font-family: monospace;
-}
-
-.scroll {
-    display: flex;
-    width: 100%; /* Full width of the container */
-    white-space: nowrap;
-    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
-}
-
-.item {
-    display: inline-block;
-    padding: 0 50px; /* Space between items */
-    white-space: nowrap;
-}
-
-.text {
-    display: block;
-}
-
-.value {
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
 }
