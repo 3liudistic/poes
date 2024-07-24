@@ -32,14 +32,13 @@ body {
 
 .message .logo-container {
     display: inline-flex;
-    align-items: center; /* Aligns items vertically */
+    align-items: center;
 }
 
 .message .logo {
     width: 1.5rem;
     height: auto;
     margin-left: 0.5rem;
-    vertical-align: middle; /* Ensures vertical alignment of the logo */
 }
 
 .message .right-to-repair {
