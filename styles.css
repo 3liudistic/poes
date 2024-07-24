@@ -39,7 +39,7 @@ body {
     width: 1.5rem;
     height: auto;
     margin-left: 0.5rem;
-
+    vertical-align: middle; /* Ensures vertical alignment of the logo */
 
 }
 
