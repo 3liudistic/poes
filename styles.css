@@ -11,6 +11,17 @@ body {
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
 }
+#container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: monospace;
+    white-space: nowrap;
+}
 
 .container {
     max-width: 600px;
@@ -22,7 +33,21 @@ body {
     max-width: 100%;
     height: auto;
 }
+.scroll {
+    display: flex;
+    position: absolute;
+    width: 200%; /* Make sure the combined width of both scrolls is twice the container width */
+}
 
+.scroll#scroll-one {
+    animation: loop 30s linear infinite; /* Adjust duration for desired scrolling speed */
+}
+
+.scroll#scroll-two {
+    transform: translateX(100%);
+    animation: loop 30s linear infinite;
+    animation-delay: 15s
+}
 .message {
     margin-top: 20px;
     padding: 0 10px; /* Add padding to prevent text from touching screen edges */
