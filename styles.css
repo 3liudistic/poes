@@ -36,7 +36,7 @@ body {
 }
 
 .message .logo {
-    width: 1.5rem;
+    width: 3.5rem;
     height: auto;
     margin-left: 0.5rem;
     vertical-align: middle; /* Ensures vertical alignment of the logo */
