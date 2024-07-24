@@ -32,21 +32,7 @@ body {
 .main-image {
     max-width: 100%;
     height: auto;
-}
-.scroll {
-    display: flex;
-    position: absolute;
-    width: 200%; /* Make sure the combined width of both scrolls is twice the container width */
-}
 
-.scroll#scroll-one {
-    animation: loop 30s linear infinite; /* Adjust duration for desired scrolling speed */
-}
-
-.scroll#scroll-two {
-    transform: translateX(100%);
-    animation: loop 30s linear infinite;
-    animation-delay: 15s
 }
 .message {
     margin-top: 20px;
