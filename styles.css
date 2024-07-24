@@ -67,19 +67,15 @@ body {
     font-family: monospace;
 }
 
-.scroll-container {
-    display: flex;
-    width: 200%; /* Double the width of the container */
-}
-
 .scroll {
     display: flex;
-    width: 50%; /* Adjust to match the width of the container */
-    flex-direction: column;
+    width: 100%; /* Full width of the container */
+    white-space: nowrap;
     animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
 .item {
+    display: inline-block;
     padding: 0 50px; /* Space between items */
     white-space: nowrap;
 }
@@ -99,6 +95,6 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
