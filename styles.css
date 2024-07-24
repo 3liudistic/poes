@@ -15,7 +15,7 @@ body {
 .container {
     max-width: 600px;
     padding: 20px;
-    text-align: top;
+    text-align: center;
 }
 
 .main-image {
@@ -32,13 +32,13 @@ body {
 
 .message .logo-container {
     display: inline-flex;
-    align-items: top;
+    align-items: center;
 }
 
 .message .logo {
-    width: 3.5rem;
+    width: 1.5rem;
     height: auto;
-    margin-left: 0.1rem;
+    margin-left: 0.5rem;
 }
 
 .message .right-to-repair {
@@ -55,7 +55,7 @@ body {
     margin-top: 20px;
 }
 
-.banner {
+#container {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -67,33 +67,17 @@ body {
     white-space: nowrap;
 }
 
-.banner-content {
+.scroll {
     display: flex;
-    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
+    position: absolute;
+    width: 200%; /* Make sure the combined width of both scrolls is twice the container width */
 }
 
-.data-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 30px;
+.scroll#scroll-one {
+    animation: loop 30s linear infinite; /* Adjust duration for desired scrolling speed */
 }
 
-.data-text {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.data-value {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+.scroll#scroll-two {
+    transform: translateX(100%);
+    animation: loop 30s linear infinite;
+    animation-delay: 15s
