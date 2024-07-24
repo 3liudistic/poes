@@ -11,17 +11,6 @@ body {
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
 }
-#container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    font-size: 1rem;
-    font-family: monospace;
-    white-space: nowrap;
-}
 
 .container {
     max-width: 600px;
@@ -32,8 +21,8 @@ body {
 .main-image {
     max-width: 100%;
     height: auto;
-
 }
+
 .message {
     margin-top: 20px;
     padding: 0 10px; /* Add padding to prevent text from touching screen edges */
@@ -66,7 +55,7 @@ body {
     margin-top: 20px;
 }
 
-.banner {
+#banner {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -75,29 +64,44 @@ body {
     overflow: hidden;
     font-size: 1rem;
     font-family: monospace;
+}
+
+.scroll-container {
+    display: flex;
+    width: 200%; /* Double the width of the container */
+}
+
+.scroll {
+    display: flex;
+    width: 50%; /* Adjust to match the width of the container */
+    flex-direction: column;
+    animation: scroll 30s linear infinite; /* Adjust duration for desired scrolling speed */
+}
+
+.item {
+    padding: 0 50px; /* Space between items */
     white-space: nowrap;
 }
 
-.banner-content {
-    display: inline-block;
-    animation: scroll 60s linear infinite; /* Adjusted duration for more data */
+.text {
+    display: block;
 }
 
-.data-item {
-    display: inline-block;
-    margin-right: 40px;
-    text-align: center;
-}
-
-.data-text {
+.value {
     display: block;
     font-weight: bold;
-}
-
-.data-value {
-    display: block;
     margin-top: 5px;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 /* Scroll animation */
 @keyframes scroll {
